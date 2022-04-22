@@ -1,0 +1,156 @@
+{% extends 'homepage/head.html' %}
+	{% load static %}
+	{% block content %}
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					{% include 'header.html' %}
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Hi, my name is Forty</h1>
+							</header>
+							<div class="content">
+								<p>A responsive site template designed by HTML5 UP<br />
+								and released under the Creative Commons.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+								<!-- Watches -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/watches.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'watches:watch' %}" class="link">Watches</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<!-- Food -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/food.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'food:food' %}" class="link">Food</a></h3>
+										<p>feugiat amet tempus</p>
+									</header>
+								</article>
+								<!-- Perfume -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/perfume.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'perfume:perfume' %}" class="link">Perfume</a></h3>
+										<p>Lorem etiam nullam</p>
+									</header>
+								</article>
+								<!-- Products -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/products.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'products:products' %}" class="link">Products</a></h3>
+										<p>Nisl sed aliquam</p>
+									</header>
+								</article>
+								<!-- Beauty -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/beauty.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'beauty:beauty' %}" class="link">Beauty</a></h3>
+										<p>Ipsum dolor sit amet</p>
+									</header>
+								</article>
+								<!-- Manipulation -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/manipulation.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'manipulation:manipulation' %}" class="link">Manipulation</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+								<!-- Monuments & Street life -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/monuments.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'monument:monument' %}" class="link">Monuments & Street life</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+								<!-- Models & Fashion -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/model.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'fashion:fashion' %}" class="link">Models & Fashion</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+								<!-- Short films -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/short films.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'short_films:short_films' %}" class="link">Short films</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+								<!-- Behind The Scenes -->
+								<article>
+									<span class="image">
+										<img src="{% static 'images/bts.jpg' %}" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{% url 'behind_the_scenes:behind_the_scenes' %}" class="link">Behind The Scenes</a></h3>
+										<p>Feugiat amet tempus</p>
+									</header>
+								</article>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="inner">
+									<header class="major">
+										<h2>Massa libero</h2>
+									</header>
+									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<ul class="actions">
+										<li><a href="landing.html" class="button next">Get Started</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				{% include 'footer.html' %}
+
+			</div>
+
+		<!-- Scripts -->
+			{% include 'scripts.html' %}
+
+	</body>
+	{% endblock %}

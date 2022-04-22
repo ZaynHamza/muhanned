@@ -1,0 +1,45 @@
+{% extends 'watches/head.html' %}
+	{% load static %}
+	{% load embed_video_tags %}
+	{% block content %}
+<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					{% include 'header.html' %}
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+						<!-- Photos -->
+							{% for p in photos %}
+							<section id="one">
+								<div class="inner">
+									<span class="image main"><img src="{{p.images.url}}" alt="" /></span>
+								</div>
+							</section>
+							{% endfor %}
+						<!-- YouTube Videos -->
+							{% for v in videos %}
+							<section id="yt">
+								<div class="inner">
+									<span class="image main"><div style="text-align: center; width: 100%;">{% video v.video 'medium' %}</div></span>
+								</div>
+							</section>
+							{% endfor %}
+
+					</div>
+
+				<!-- Footer -->
+					{% include 'footer.html' %}
+
+			</div>
+
+		<!-- Scripts -->
+			{% include 'scripts.html' %}
+
+	</body>
+    {% endblock %}
