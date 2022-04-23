@@ -15,7 +15,6 @@ import os
 import django_heroku
 import dj_database_url
 from decouple import config
-import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,11 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=ykp_p-&kg)5s*)+!9a*8%a%b-#41$ks%e*gs&1wbanw+kzi5w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-if (len(sys.argv) >= 2 and sys.argv[1] == 'runserver'):
-    DEBUG = True
-else:
-    DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
