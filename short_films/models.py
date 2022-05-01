@@ -13,6 +13,7 @@ class ShortFilms(models.Model):
 
     class Meta:
         ordering = ['-pub_date']
+        verbose_name_plural = 'Short Films'
 
 
 class ShortFilmsImage(models.Model):

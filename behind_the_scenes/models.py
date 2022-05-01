@@ -13,6 +13,7 @@ class BehindTheScenes(models.Model):
 
     class Meta:
         ordering = ['-pub_date']
+        verbose_name_plural = 'Behind The Scenes'
 
 
 class BehindTheScenesImage(models.Model):

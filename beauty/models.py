@@ -13,6 +13,7 @@ class Beauty(models.Model):
 
     class Meta:
         ordering = ['-pub_date']
+        verbose_name_plural = 'Beauties'
 
 
 class BeautyImage(models.Model):

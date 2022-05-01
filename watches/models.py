@@ -13,6 +13,7 @@ class Watch(models.Model):
 
     class Meta:
         ordering = ['-pub_date']
+        verbose_name_plural = 'Watches'
 
 
 class WatchImage(models.Model):
